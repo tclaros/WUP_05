@@ -25,7 +25,7 @@ $H_A$: The drug was effective in preventing females from contracting the virus.
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
   
-Since both of our variables are categorical, we will use the bar plot with a    
+Since both of our variables are categorical, we will use the bar plot with a chisq.test.    
 
 # Results
 
@@ -60,8 +60,15 @@ The table shows that if a female were to get the vaccine, she would be 1.4x more
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
-
-
+  
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```  
+  
+We reject the null hypothesis because the p-value is less than 0.05. Our p-value is 0.00007686. The fisher exact table is also significant in showing that we reject the null hypothesis because the p-value is 0.00006596.  
+    
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
