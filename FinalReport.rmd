@@ -72,3 +72,6 @@ We reject the null hypothesis because the p-value is less than 0.05. Our p-value
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+  
+The original question was: Is the drug seem effective in preventing females from contracting aides.  $H_0$: The drug was not effective in preventing females from contracting the virus. $H_A$: The drug was effective in preventing females from contracting the virus. The table showed that females were 1.4x more susceptible in contracting aides with the preventative measures compared to the placebo. Our p-value is 0.00007686, smaller than 0.05 and because of that we reject the null hypothesis. 
+  
